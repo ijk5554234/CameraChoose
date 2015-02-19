@@ -13,20 +13,5 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/commons-codec-1.6.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/commons-logging-1.1.3.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/fluent-hc-4.3.2.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/httpclient-4.3.2.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/httpclient-cache-4.3.2.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/httpcore-4.3.1.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/httpmime-4.3.2.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/TravelPlan/lib/org.json-20120521.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/twitter4j-4.0.2.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/lib/twitter4j-async-4.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/lib/twitter4j-core-4.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/lib/twitter4j-examples-4.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/lib/twitter4j-media-support-4.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jike/Downloads/lib/twitter4j-stream-4.0.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

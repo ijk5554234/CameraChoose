@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="HW9-final">
+    <wb-module deploy-name="CameraChooseFebFinal">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="HW9-final"/>
-        <property name="java-output-path" value="/HW9-final/build/classes"/>
+        <property name="context-root" value="CameraChooseFebFinal"/>
+        <property name="java-output-path" value="/CameraChooseFebFinal/build/classes"/>
     </wb-module>
 </project-modules>

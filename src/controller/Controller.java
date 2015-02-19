@@ -28,6 +28,8 @@ public class Controller extends HttpServlet {
 		Action.add(new LoginAction(model));
 		Action.add(new LogoutAction(model));
 		Action.add(new ResultAction(model));
+		Action.add(new BlindAction(model));
+		Action.add(new CompareAction(model));
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -58,7 +60,7 @@ public class Controller extends HttpServlet {
 		
 
 		if (twitter != null && action.equals("callback")) {
-			return Action.perform("result.do", request);
+			return Action.perform("compare.do", request);
 		}
 
 		if (action.equals("welcome")) {
@@ -86,7 +88,6 @@ public class Controller extends HttpServlet {
 		}
 		
 		if (nextPage.endsWith("callback")) {
-			System.out.println(request.getServletPath());
 			response.sendRedirect(request.getServletPath()+ "/result.do");
 		}
 

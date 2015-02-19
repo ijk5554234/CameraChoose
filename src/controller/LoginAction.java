@@ -7,11 +7,12 @@
 
 package controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
-import model.CameraDAO;
+
+import model.FlickrSearch;
 import model.Model;
-
-
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
@@ -20,10 +21,7 @@ import twitter4j.conf.ConfigurationBuilder;
 
 public class LoginAction extends Action {
 
-	private CameraDAO cameraDAO;
-
 	public LoginAction(Model model) {
-		cameraDAO = model.getCameraDAO();
 	}
 
 	public String getName() {
@@ -32,6 +30,10 @@ public class LoginAction extends Action {
 
 	@Override
 	public String perform(HttpServletRequest request) {
+	    FlickrSearch fs = new FlickrSearch();
+        ArrayList<String> rt = (ArrayList<String>) fs.run2();
+        request.setAttribute("pictures", rt);
+       
 		if (request.getParameter("action") == null) return "login.jsp";
 		
 		ConfigurationBuilder cb = new ConfigurationBuilder();
@@ -50,6 +52,9 @@ public class LoginAction extends Action {
 		} catch (TwitterException e) {
 			e.printStackTrace();
 		}
+		
+		
+		
 		return "login.jsp";
 	}
 }

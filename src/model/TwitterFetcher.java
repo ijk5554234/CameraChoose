@@ -135,7 +135,7 @@ public class TwitterFetcher extends WebAccessor {
 		ArrayList<String> result = null;
 		try {
 			queryUrlString = "https://api.twitter.com/1.1/search/tweets.json?q=" + URLEncoder.encode(s, "UTF-8") + "&count=" + 5
-					+ "&result_type=popular";
+					+ "&result_type=popular" + "lang%3Aen";
 			 result = fetchTimelineTweets(queryUrlString);
 
 		} catch (UnsupportedEncodingException e1) {
